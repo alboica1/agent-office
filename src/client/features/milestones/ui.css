@@ -1,0 +1,31 @@
+/* The 🎯 Milestones window. */
+.ms-window { width: min(760px, 100%); }
+.ms-summary { font-size: 13px; font-weight: 800; color: var(--muted); white-space: nowrap; }
+.ms-body { display: flex; flex-direction: column; gap: 10px; }
+.ms-window footer input[type=text] { flex: 1; min-width: 0; }
+.ms-list, .ms-tasks { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.ms-card { border: 3px solid var(--ink); border-radius: 14px; background: #fff; padding: 8px 10px; }
+.ms-card.current { border-color: #e76f51; box-shadow: 0 0 0 3px rgba(231, 111, 81, .25); }
+.ms-card.reached { background: #f1fbf6; }
+.ms-head { display: flex; align-items: center; gap: 6px; }
+.ms-head input[type=text] { flex: 1; min-width: 0; font-weight: 800; padding: 6px 10px; border-width: 2px; }
+.ms-num { font-weight: 900; color: var(--muted); min-width: 1.4em; text-align: right; }
+.ms-badge { font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: .04em; padding: 2px 7px; border-radius: 999px; color: #fff; white-space: nowrap; }
+.ms-badge.current { background: #e76f51; }
+.ms-badge.reached { background: #1e8f4e; }
+.ms-count { font-size: 13px; font-weight: 900; color: var(--muted); min-width: 3.2em; text-align: right; }
+.ms-bar { width: 90px; height: 10px; border-radius: 999px; background: #e9e3d6; overflow: hidden; flex: none; }
+.ms-bar > span { display: block; height: 100%; background: #1e8f4e; border-radius: 999px; }
+.ms-card.current .ms-bar > span { background: #e76f51; }
+.modal .ms-icon { padding: 2px 8px; min-width: 30px; font-size: 14px; box-shadow: 0 2px 0 var(--ink); }
+.ms-tasks { margin: 8px 0 0 36px; gap: 4px; }
+.ms-task { display: flex; align-items: center; gap: 6px; }
+.ms-task input[type=checkbox] { width: 18px; height: 18px; flex: none; accent-color: #1e8f4e; cursor: pointer; }
+.ms-task input[type=text] { flex: 1; min-width: 0; font-size: 14px; padding: 4px 8px; border-width: 2px; border-radius: 9px; }
+.ms-task.done input[type=text] { text-decoration: line-through; color: var(--muted); }
+.ms-by { font-size: 11px; font-weight: 800; color: #1e8f4e; white-space: nowrap; }
+.ms-add-task { display: flex; gap: 6px; margin: 6px 0 0 36px; }
+.ms-add-task input[type=text] { flex: 1; min-width: 0; font-size: 14px; padding: 5px 9px; border-width: 2px; border-radius: 9px; }
+.ms-empty { text-align: center; padding: 18px 8px; }
+.ms-empty p { margin: 0 0 6px; font-weight: 900; font-size: 17px; }
+.ms-empty .note { font-weight: 700; font-size: 14px; color: var(--muted); }

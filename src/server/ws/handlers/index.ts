@@ -12,6 +12,7 @@ import { floorHandlers, projectView } from './floors.js';
 import { githubHandlers, issuesView, pullsView } from './github.js';
 import { jukeboxHandlers, jukeboxView } from './jukebox.js';
 import { meetingHandlers, meetingView } from './meetings.js';
+import { milestonesHandlers, milestonesView } from './milestones.js';
 import { planHandlers, planView } from './plan.js';
 import { presenceHandlers } from './presence.js';
 import { queueHandlers, queueView } from './queue.js';
@@ -37,6 +38,7 @@ export const handlers: HandlerMap<ClientMsg> = {
   ...githubHandlers,
   ...jukeboxHandlers,
   ...meetingHandlers,
+  ...milestonesHandlers,
   ...planHandlers,
   ...presenceHandlers,
   ...queueHandlers,
@@ -73,4 +75,5 @@ export const views: ViewPieces = {
   whiteboard: whiteboardView,
   meeting: meetingView,
   cabinet: cabinetView,
+  milestones: milestonesView,
 };
